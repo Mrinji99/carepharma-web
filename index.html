@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePharma | CareAI Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="bg-blue-600 p-2 rounded-lg text-white">
+                <i data-lucide="pill"></i>
+            </div>
+            <span class="text-xl font-bold text-blue-900">CarePharma</span>
+        </div>
+        <div class="hidden md:flex gap-6 font-medium text-slate-600">
+            <a href="#" class="hover:text-blue-600">Marketplace</a>
+            <a href="#" class="hover:text-blue-600">CareAI</a>
+            <a href="#" class="hover:text-blue-600">CarePay</a>
+        </div>
+        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition">Get Started</button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-4">
+                <i data-lucide="bot" size="16"></i> POWERED BY CAREAI
+            </div>
+            <h1 class="text-5xl font-extrabold leading-tight mb-6">Your Health, <span class="text-blue-600">Digitally Verified.</span></h1>
+            <p class="text-lg text-slate-600 mb-8">The smart e-pharmacy for Tanzania. Upload prescriptions, check symptoms with CareAI, and pay with M-Pesa.</p>
+            
+            <div class="flex bg-white p-2 rounded-2xl shadow-lg border border-slate-200">
+                <input type="text" placeholder="Search medicines..." class="flex-1 px-4 outline-none">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700">Search</button>
+            </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 p-8 rounded-[2rem] shadow-xl">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                    <i data-lucide="bot"></i>
+                </div>
+                <h3 class="font-bold">CareAI Assistant</h3>
+            </div>
+            <div class="space-y-4 mb-6">
+                <div class="bg-slate-100 p-4 rounded-2xl rounded-tl-none">"I have a sharp headache and fever."</div>
+                <div class="bg-blue-600 p-4 rounded-2xl rounded-tr-none text-white text-sm">
+                    <strong>CareAI:</strong> This could be clinical exhaustion or early flu. I recommend a check-up. Should I find <strong>Panadol</strong> at a nearby pharmacy for you?
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <button class="py-3 bg-blue-50 text-blue-700 rounded-xl text-xs font-bold hover:bg-blue-100">Find Medicine</button>
+                <button class="py-3 bg-slate-900 text-white rounded-xl text-xs font-bold hover:bg-slate-800">Upload Script</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
